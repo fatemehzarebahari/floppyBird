@@ -1,0 +1,21 @@
+# ninja log v5
+0	45	7308956037073819	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	97a92978ac9b675d
+45	24335	7308956279954557	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	f91cb7db36bb23fd
+24388	24433	7308956280951224	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	988957ca4726984
+24641	24707	7308956283686126	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	3be506133c8289eb
+0	45	7308956037073819	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	97a92978ac9b675d
+24335	24386	7308956280482674	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	e83811990b633301
+45	24335	7308956279954557	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	f91cb7db36bb23fd
+24335	24386	7308956280482674	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	e83811990b633301
+24388	24433	7308956280951224	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	988957ca4726984
+24433	24476	7308956281383983	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	70e2d82a4aac055e
+24433	24476	7308956281383983	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	70e2d82a4aac055e
+24522	24585	7308956282444502	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	50f0519dce1c6a0
+24476	24521	7308956281831273	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	189e90506460b51b
+24476	24521	7308956281831273	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	189e90506460b51b
+24522	24585	7308956282444502	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	50f0519dce1c6a0
+24585	24641	7308956283037628	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	2118b5e0f0bd514d
+24585	24641	7308956283037628	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	2118b5e0f0bd514d
+24641	24707	7308956283686126	CMakeFiles/raylib-populate-complete	3be506133c8289eb
+24641	24707	7308956283686126	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	3be506133c8289eb
+24641	24707	7308956283686126	D:/uni/floppy/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	3be506133c8289eb
