@@ -39,51 +39,10 @@ static Vector2 tubesPos[MAX_TUBES] = { 0 };
 static int tubesSpeedX = 0;
 static bool superfx = false;
 
-//------------------------------------------------------------------------------------
-// Module Functions Declaration (local)
-//------------------------------------------------------------------------------------
-static void InitGame(void);         // Initialize game
-static void UpdateGame(void);       // Update game (one frame)
-static void DrawGame(void);         // Draw game (one frame)
-static void UnloadGame(void);       // Unload game
-static void UpdateDrawFrame(void);  // Update and Draw (one frame)
 
-//------------------------------------------------------------------------------------
-// Program main entry point
-//------------------------------------------------------------------------------------
-int main(void)
-{
-    // Initialization
-    //---------------------------------------------------------
-    InitWindow(screenWidth, screenHeight, "classic game: floppy");
-
-    InitGame();
-
-    SetTargetFPS(60);
-    //--------------------------------------------------------------------------------------
-
-    // Main game loop
-    while (!WindowShouldClose())    // Detect window close button or ESC key
-    {
-        // Update and Draw
-        //----------------------------------------------------------------------------------
-        UpdateDrawFrame();
-        //----------------------------------------------------------------------------------
-    }
-    // De-Initialization
-    //--------------------------------------------------------------------------------------
-
-    CloseWindow();        // Close window and OpenGL context
-    //--------------------------------------------------------------------------------------
-
-    return 0;
-}
-//------------------------------------------------------------------------------------
-// Module Functions Definitions (local)
-//------------------------------------------------------------------------------------
 
 // Initialize game variables
-void InitGame(void)
+void InitGame()
 {
     floppy.radius = FLOPPY_RADIUS;
     floppy.position = (Vector2){80, screenHeight/2 - floppy.radius};
@@ -118,7 +77,7 @@ void InitGame(void)
 }
 
 // Update game (one frame)
-void UpdateGame(void)
+void UpdateGame()
 {
     if (!gameOver)
     {
@@ -168,7 +127,7 @@ void UpdateGame(void)
 }
 
 // Draw game (one frame)
-void DrawGame(void)
+void DrawGame()
 {
     BeginDrawing();
 
@@ -202,10 +161,37 @@ void DrawGame(void)
     EndDrawing();
 }
 
-
 // Update and Draw (one frame)
-void UpdateDrawFrame(void)
+void UpdateDrawFrame()
 {
     UpdateGame();
     DrawGame();
+}
+
+int main(void)
+{
+    // Initialization
+    //---------------------------------------------------------
+    InitWindow(screenWidth, screenHeight, "classic game: floppy");
+
+    InitGame();
+
+    SetTargetFPS(60);
+    //--------------------------------------------------------------------------------------
+
+    // Main game loop
+    while (!WindowShouldClose())    // Detect window close button or ESC key
+    {
+        // Update and Draw
+        //----------------------------------------------------------------------------------
+        UpdateDrawFrame();
+        //----------------------------------------------------------------------------------
+    }
+    // De-Initialization
+    //--------------------------------------------------------------------------------------
+
+    CloseWindow();        // Close window and OpenGL context
+    //--------------------------------------------------------------------------------------
+
+    return 0;
 }
